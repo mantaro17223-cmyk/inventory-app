@@ -1,0 +1,136 @@
+/* 基本スタイル */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #2c3e50;
+    text-align: center;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+#search-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* フォームスタイル */
+.form-container {
+    margin-bottom: 30px;
+}
+
+#add-item-form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+#add-item-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#add-item-form input[type="text"] {
+    flex: 2;
+}
+
+#add-item-form input[type="number"] {
+    flex: 1;
+}
+
+#add-item-form button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#add-item-form button:hover {
+    background-color: #2980b9;
+}
+
+/* テーブルスタイル */
+#inventory-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#inventory-table th, #inventory-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+#inventory-table thead {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+}
+
+#inventory-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#inventory-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* ↓↓↓ 変更点：操作ボタンのスタイルを復活 ↓↓↓ */
+.action-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    margin: 0 2px;
+    font-weight: bold;
+}
+
+.btn-increase {
+    background-color: #2ecc71; /* 緑 */
+}
+.btn-increase:hover {
+    background-color: #27ae60;
+}
+
+.btn-decrease {
+    background-color: #f39c12; /* オレンジ */
+}
+.btn-decrease:hover {
+    background-color: #e67e22;
+}
+
+.btn-delete {
+    background-color: #e74c3c; /* 赤 */
+}
+.btn-delete:hover {
+    background-color: #c0392b;
+}

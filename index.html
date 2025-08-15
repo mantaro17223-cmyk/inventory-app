@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在庫管理システム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>在庫管理システム</h1>
+
+        <div class="form-container">
+            <h2>商品を追加</h2>
+            <form id="add-item-form">
+                <input type="text" id="item-name" placeholder="商品名" required>
+                <input type="text" id="item-location" placeholder="保管場所" required>
+                <input type="number" id="item-quantity" placeholder="在庫数" min="0" required>
+                <button type="submit">追加</button>
+            </form>
+        </div>
+
+        <div class="inventory-container">
+            <h2>在庫リスト</h2>
+
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="商品名または場所で検索...">
+            </div>
+
+            <table id="inventory-table">
+                <thead>
+                    <tr>
+                        <th>商品名</th>
+                        <th>保管場所</th>
+                        <th>在庫数</th>
+                        <th>最終更新日</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody id="inventory-body">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
